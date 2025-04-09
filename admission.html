@@ -21,14 +21,14 @@
 
     <!-- form section  -->
     <section id="admission">
-        <form>
+        <form action="form2.php" method="post"> 
             <h2 style="align-items: center;justify-content: center; display: flex;">Admission Form</h2>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Enter Your Full Name">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required placeholder="Enter Your E-mail ID">
             <label for="mobile">Mobile No.:</label>
-            <input type="number" required placeholder="Enter Your Mobile Number">
+            <input type="number" required placeholder="Enter Your Mobile Number"  name="mobile">
             <label for="course">Courses Interested:</label>
             <select id="course" name="course">
                 <option value="courses">BBA</option>
@@ -39,7 +39,7 @@
                 <option value="courses">MA</option>
             </select>
 
-            <button type="submit"><a href="submit.html" style="text-decoration: none; color: white;">Submit</a></button>
+            <button type="submit" name="btn"><a href="submit.html" style="text-decoration: none; color: white;">Submit</a></button>
         </form>
     </section>
 
